@@ -15,7 +15,7 @@ function display() {
       <th scope="row">${i + 1}</th>
       <td><img src="${emailData[i].avatar}" alt=""></td>
       <td>${emailData[i].first_name} ${emailData[i].last_name}</td>
-      <td>${emailData[i].email}</td>
+      <td><a href = "mailto:${emailData[i].email}">${emailData[i].email}</a></td>
     </tr>`;
         console.log(container);
       }
